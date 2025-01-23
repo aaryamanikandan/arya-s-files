@@ -1,4 +1,4 @@
-#armstrong or not
+#program to check whether a 3-digit number is armstrong or not
 n=int(input("enter the 3 digit number :"))
 num=n
 sum=0
