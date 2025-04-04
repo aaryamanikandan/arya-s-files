@@ -1,9 +1,8 @@
-def count_digits(number):
-    # Convert the number to a positive integer
-    number = abs(number)
-    # Convert the number to a string and count its length
-    return len(str(number))
+#Write a Python program to count how many times each character appears in a given string and store the count in a dictionary.
+def count_chars(string):
+    char_count = {}
+    for char in string:
+        char_count[char] = char_count.get(char, 0) + 1
+    return char_count
 
-# Input from the user
-num = int(input("Enter a number: "))
-print(f"The total number of digits in {num} is {count_digits(num)}.")
+print(count_chars("hello world"))

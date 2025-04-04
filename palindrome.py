@@ -1,13 +1,8 @@
-# if a number is palindrome 
-n=int(input("enter the num to be checked :"))
-num=n
-rem=0
-sum=0
-while n>0:
-    rem=n%10
-    sum=(sum*10)+rem
-    n=n//10
-if num==sum:
-    print("palindrome")
-else:
-    print("not palindrome")
+#Write a Python program to print all palindromes in a line of text.
+
+def is_palindrome(word):
+    return word == word[::-1]
+
+text = "madam racecar apple level noon"
+palindromes = [word for word in text.split() if is_palindrome(word)]
+print("Palindromes:", palindromes)  
